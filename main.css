@@ -1,25 +1,17 @@
-.html,body{
+html, body{
 	height: 100%;
 	width: 100%;
-	background-color: black;
 	margin: 0px;
-}
-
-*{
-	margin-bottom: 0px;
-}
-
-.cont{
-	height: 100%;
-	width:100%;
-	padding-top: 5%;
 	font-family: 'Open Sans', sans-serif;
-	color: white;
-
-	font-size: 150px;
+	background-color: white;
 }
-.con{
-	color: white;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 60px;
+
+.logo{
+/*	background-color: rgba(255,163,222,0.3);*/	
+	height: 300px;
+	width: 300px;
+	margin-left: 40%;
+	text-align: center;
+	position: center;
+	margin-top: 20%;
 }
