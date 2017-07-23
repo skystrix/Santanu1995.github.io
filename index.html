@@ -1,31 +1,400 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-	<title>Portfolio:Santanu Das</title>
+	<title>Santanu Das</title>
 	<meta charset="utf-8">
 	<meta name="description" content="Portfolio">
 	<meta name="keywords" content="Santanu, Portfolio">
 	<meta name="author" content="Santanu Das">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.png" >
   <link href= "https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet"  href="css/bootstrap.min.css">
+  <link rel="stylesheet"  href="css/bootstrap.min.css">
   <link rel="stylesheet"  href="css/bootstrap-theme.min.css">
 </head>
+
+
 <body>
 
-	<div class="logo">
-		<object class="logo2">
-			<embed src="sd-logo.svg"/>
-		</object>
+<!--	<button onclick="topFunction()" id="myBtn" title="Go to top">Take Me Up</button>-->
+	<p id="myBtn">
+	<a href="#" title="Go to top" style="color: white;"><span></span>Take Me Up</a>
+	</p>
+	<nav class="b-clr navbar" role="navigation">
+		<div class="container">
+            <a class="navbar-brand" href="#">
+            	<img class="img-responsive" src="images/sd-logo1.png">
+            </a>
+
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+            	<span class=" sr-only">Toggle navigation</span>
+	            <span class="white-text">Expand</span>
+            </button>
+			   
+			<div class="collapse navHeaderCollapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="">
+				        <a href="#" >Home</a>
+				    </li>
+				    <li>
+				        <a id="bio" style="cursor: pointer;">About Me</a>
+				    </li>    	
+				    <li>
+				        <a id="skills" style="cursor: pointer;">My Skills</a>
+				    </li>
+				    <li>
+				        <a id="works" style="cursor: pointer;">Works</a>
+				    </li>
+				    <li>
+				        <a id="timeline" style="cursor: pointer;">Timeline</a>
+				    </li>
+				    <li>
+				        <a id="contact" style="cursor: pointer;">Contact</a>
+				    </li>
+				</ul>
+			</div>
+		</div> 
+
+	</nav>
+	<!--END OF NAVIGATION-->
+
+	<div class="containerf">
+		<img class="back-img" src="images/back-1.png">
+		<div class="landing-text">
+			Hello <span style="color: red; font-family: 'Open Sans', sans-serif;">World!</span><br>
+			I <span style="color: red;">am</span> Santanu<span style="color: red;">.</span>
+		
+
+		</div>
+		<div class="bio" id="bio1">
+			<div class="bio-text">
+				<br><br>
+				<center>
+					<img src="images/sd-logo1.png">
+				</center>
+				<br>
+				<span class="big-text ">Little about this guy here <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
+				<br>
+				<span class="mid-text">
+				Geek at heart, nerd outside, loves to code. An artist, runs own blog, good at web design. Programming freak. Also into competitive programming. Eats, sleeps and breathe code. Belives that one's code can make a difference in the digital era. Well, enough of that stuff. Loves to play games. Sadly, not a diamond in academics and has a one-page resume.
+				</span>
+				<br><br>
+				<a class="download" href="https://www.dropbox.com/s/4k40iru7jxyibta/Santanu_CV_17.pdf?dl=0" target="_blank">
+				<button class="button">SEE MY RESUME</button></a>
+			</div>
+		</div>
 	</div>
+	<!--BIO-->
+
+	
+	<!--END OF BIO-->
+
+	<!--START OF SKILLS-->
+
+	<div class="skills" id="skills1">
+	<br><br><br>
+		<div class="skill-content">
+			<h1 class = "works-text"style="color: white; text-align: center;">MY SOFTWARE SKILLS</h1>
+			<br><br>
+			<div class="skill-bars">
+				<h4 class="bar-title" style="margin-top: 20px;">WEB DEVELOPMENT</h4>
+					<h6 class="bar-title">HTML</h6>
+					<div class="bar">
+						<div class="bar-inner bar90" data-percent="90%"></div>
+					</div>
+					
+					<h6 class="bar-title">CSS</h6>
+					<div class="bar">
+						<div class="bar-inner bar80" data-percent="80%"></div>
+					</div>
+
+					<h6 class="bar-title">JAVASCRIPT</h6>
+					<div class="bar">
+						<div class="bar-inner bar60" data-percent="60%"></div>
+					</div>
+				<h4 class="bar-title" style="margin-top: 20px;">LANGUAGES</h4>
+					<h6 class="bar-title">C/C++</h6>
+					<div class="bar">
+						<div class="bar-inner bar90" data-percent="90%"></div>
+					</div>
+					
+					<h6 class="bar-title">Python</h6>
+					<div class="bar">
+						<div class="bar-inner bar80" data-percent="80%"></div>80
+					</div>
+
+					<h6 class="bar-title">Java</h6>
+					<div class="bar">
+						<div class="bar-inner bar60" data-percent="60%"></div>
+					</div>
+				<h4 class="bar-title" style="margin-top: 20px;">DATABASES</h4>
+					<h6 class="bar-title">MySQL</h6>
+					<div class="bar">
+						<div class="bar-inner bar90" data-percent="90%"></div>
+					</div>
+				<h4 class="bar-title" style="margin-top: 20px;">OPERATING SYSTEMS</h4>
+					<h6 class="bar-title">WINDOWS</h6>
+					<div class="bar">
+						<div class="bar-inner bar90" data-percent="90%"></div>
+					</div>
+					
+					<h6 class="bar-title">LINUX</h6>
+					<div class="bar">
+						<div class="bar-inner bar80" data-percent="80%"></div>
+					</div>
+			</div>
+
+
+		</div>
+	</div>
+	<br><br>
+
+	<!-- LATEST WORKS -->
+
+	<div class="container works" id="works1">
+		<div class="row">
+			<div class="col-xs-12 works-text">
+				WORKS
+			</div>
+			<figure class="container2 col-xs-12 col-lg-4">
+				<img src="images/super.png" class="image" alt="Super Mario Game">
+				<div class="middle">
+    				<div class="text"><a href="https://github.com/Santanu1995/Super-Mario-Game" target="_blank">EXPLORE</a></div>
+  				</div>
+			</figure>
+			<figure class="container2 col-xs-12 col-lg-4">
+				<img src="images/working.png" class="image">
+				<div class="middle">
+    				<div class="text">DOING IT BRO</div>
+    			</div>
+			</figure>
+			<figure class="container2 col-xs-12 col-lg-4">
+				<img src="images/working.png" class="image">
+				<div class="middle">
+    				<div class="text">SAME HERE</div>
+    			</div>
+			</figure>
+			
+		</div>
+    </div>
+    
+    <br><br>
+
+    <hr>
+
+    <div class="window1">
+    
+	    <div class="property" style="border-right: thin solid #ffffff;">
+	    	<span class="count">4</span><br>
+	    	<img src="images/programmer.png"><br><br>
+	    	<span class="pro-name">Projects</span>
+	    </div>
+    	
+    	<div class="property" style="border-right: thin solid #ffffff;">
+	    	<span class="count">7</span><br>
+	    	<img src="images/custom-css.png"><br><br>
+	    	<span class="pro-name">Languages</span>
+	    </div>
+
+	    <div class="property" style="border-right: thin solid #ffffff;">
+	    	<span class="count">100</span><span class="plus">+</span><br>
+	    	<img src="images/lovers-heart.png"><br><br>
+	    	<span class="pro-name">Red Bull cans</span>
+	    </div>
+
+	    <div class="property">
+	    	<span class="count">10,000</span><span class="plus">+</span><br>
+	    	<span class="pro-name">LOC</span><br><br>
+	    	<span class="pro-name">Lines of Code Written</span>
+	    </div>
+    </div>
+
+<br><br><br><br>
+	<div class="works-text" id="timeline1">TIMELINE</div>
+	<section class="timeline">
+
+		<ul>
+		    
+		    <li>
+		      <div>
+		        <time style="color: #4CAF50;">2012</time><br>
+		         Passed Class X from Tripura Board of Secondary Education with 79% marks. 84% in Science group.
+		      </div>
+		    </li>
+		     
+		    <li>
+		      <div>
+		        <time style="color: #4CAF50;">2014</time><br>
+		         Passed Class XII from Central Board of Secondary Education with 81% marks.
+		      </div>
+		    </li>
+
+		    <li>
+		      <div>
+		        <time style="color: #4CAF50;">2014</time><br>
+		         Joined B.Tech in Computer Science and Engineering in National Institute of Technology, Agartala.
+		      </div>
+		    </li>
+
+		    <li>
+		      <div>
+		        <time style="color: #4CAF50;">2016</time><br>
+		         Attended workshop on Human Computer Interaction,2016 organised by N.I.T
+				Agartala which hosted eminent speakers from premier institutes from both industry and Institutes.
+		      </div>
+		    </li>
+
+		    <li>
+		      <div>
+		        <time style="color: #4CAF50;">2016(Summer)</time><br>
+		        Completed Summer Training on Big Data and Cloud Computing by IBNC Kolkata. Worked on Microsoft Azure cloud. Worked with
+				technologies like Hadoop, HDFS, HBase, SaaS, PaaS, MapReduce, Hive, and Pig.
+		      </div>
+		    </li>
+
+		    <li>
+		      <div>
+		        <time style="color: #4CAF50;">2016 (Winter)</time><br>
+		        Made a Super Mario Game using PyGame from scratch using functions and classes in Python. Later ptimized and
+                modified the game in different ways.
+		      </div>
+		    </li>
+
+
+		    <li>
+		      <div>
+		        <time style="color: #4CAF50;">2017 (Summer)</time><br>
+		        Made a portfolio website from scratch using HTML, CSS, BOOTSTRAP and JAVASCRIPT.
+		      </div>
+		    </li>
+		  
+		</ul>
+	</section>
+
+
+	<!--CONTACT FORM STARTS -->
+	
+	<footer id="contact1">
+	<center style="color: #4CAF50; font-size: 40px; font-family: 'Open Sans', sans-serif;">Feel the tingling in your fingertips? Thats the magnetic urge to <br><span style="color: red;">Contact Me</span></center>
+		<div class="address">
+			<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><br>
+			<span class="con-text">Mail me at</span>
+			<br>
+			<span class="details">santanud.411@gmail.com</span><br><br>
+			
+			<span class="glyphicon glyphicon-phone" aria-hidden="true"></span><br>
+			<span class="con-text">Ring me at</span>
+			<br>
+			<span class="details">8729824400</span><br><br>
+			<div id="map"></div>
+			<span class="glyphicon glyphicon-home" aria-hidden="true"></span><br>
+			<span class="con-text">I am physically available at</span>
+			<br>
+			<span class="details">VIP Road, Radhanagar<br>Near Hindi HS School<br>Agartala 799005<br>Tripura West</span><br><br>
+
+
+			<span class="con-text">And also on..</span>
 
 
 
+		</div>
+      
+    </footer>
+	
+
+    <!--CONTACT ENDS -->
+    
+    <center class = "last">Santanu Das | Portfolio</center>
 
 	<!--JAVASCRIPT-->
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+
+	//  skill bars animation .................................................
+		(function(document){
+			var _bars = [].slice.call(document.querySelectorAll('.bar-inner'));
+
+			_bars.map(function(bar,index){
+				setTimeout(function(){
+					bar.style.width = bar.dataset.percent;
+				}, index*500);
+			})
+				})(document);
+
+// CAREER TIMELINE ----------------------------------------------------------------------------
+
+		function isElementInViewport(el) {
+			  var rect = el.getBoundingClientRect();
+			  return (
+			    rect.top >= 0 &&
+			    rect.left >= 0 &&
+			    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+			    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+			  );
+			}
+			var items = document.querySelectorAll(".timeline li");
+			 
+			// code for the isElementInViewport function
+			 
+			function callbackFunc() {
+			  for (var i = 0; i < items.length; i++) {
+			    if (isElementInViewport(items[i])) {
+			      items[i].classList.add("in-view");
+			    }
+			  }
+			}
+			 
+			window.addEventListener("load", callbackFunc);
+			window.addEventListener("scroll", callbackFunc);
+
+
+// BACK TO TOP BUTTON
+		// When the user scrolls down 20px from the top of the document, show the button
+		/*
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+    		if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        	document.getElementById("myBtn").style.display = "block";
+    		} else {
+        	document.getElementById("myBtn").style.display = "none";
+    		}
+		}
+		*/
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			
+    		//document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    		//document.documentElement.scrollTop = 0; // For IE and Firefox
+    		//scroll_top_duration = 700;
+		}			
+
+		
+	</script>
+
+
+	<script>
+      function initMap() {
+        var uluru = {lat: 23.8315, lng: 91.2868};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbS8UC-dd3xNvIwzXzXmnonVyhwbmBzcg&callback=initMap">
+    </script>
+
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script> 
+	<script src="js/bootstrap.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/script2.js"></script>
+
 </body>
 </html>
