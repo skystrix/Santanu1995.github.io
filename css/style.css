@@ -1,167 +1,373 @@
 *{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
+
+html *,
+html *:before,
+html *:after {
+  box-sizing: border-box;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url('Gilroy-ExtraBold.ttf');
+  }
+
+@font-face {
+    font-family: 'gilroyy';
+    src: url('Gilroy-Light.ttf');
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto-Bold.ttf');
+}
+
 body{
+    font-family: gilroy;
+    background-color: #1B1B1B;
 }
- .landing-text{
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 2pc;
- }
 
 nav{
-    height: 80px;
-    position: absolute;
     width: 100%;
-    font-family: 'Archivo Black', sans-serif;
-    z-index: 9999;
+    height: 15vh;
+    margin-top: 2%;
+    position: relative;
+}
+
+.name{
+    float: left;
+    line-height: 15vh;
+    margin-left: 7%;
+    color: #CACACA;
+    position: absolute;
+}
+
+.desig{
+    color: #EA9B36;
+    position: absolute;
+    line-height: 24vh;
+    margin-left: 7%;
+}
+
+.name a{
+    color: #CACACA;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 nav ul{
-    float: right;
-    margin-right: 40px;
+    padding-right: 3%;
 }
 
 nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 30px;
+    line-height: 15vh;
+    margin-right: 5%;
+    list-style-type: none;
+    float: right;
 }
 
 nav ul li a{
-    color: #000;
-    text-transform: uppercase;
-    border-radius: 3px;
-    padding: 7px 13px;
-    opacity: 90%;
+    text-decoration: none;
+    color: #CACACA;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-a.active, a:hover{
-    background: #121212;
-    color: white;
-    transition: .5s;
+nav ul li a:hover{
+    color: #EA9B36;
 }
 
-.checkbtn{
-    font-size: 30px;
-    color: #000;
+.active{
+    color: #EA9B36;
+}
+
+.container{
+    position: relative;
+}
+
+.landing-page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main-text{
+    position: relative;
+    width: 80%;
+    padding-left: 7%;
+    padding-top: 20vh;
+    color: #CACACA;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.picture{
+    position: relative;
+    margin-right: 10%;
+    margin-top: -16%;
+    border-radius: 50%;
     float: right;
-    line-height: 80px;
-    margin-right: 2px;
-    cursor: pointer;
-    display: none;
 }
 
-#check{
-    display: none;
+
+.about{
+    position: relative;
+    color: #CACACA;
+    width: 100%;
+    height: 100vh;
+    margin-top: 25%;
 }
 
-@media (max-width: 952px){
-    nav ul li a{
-        font-size: 16px;
-    }
+.about-title{
+    font-size: 60px;
+    font-weight: 600;
+    padding-left: 7%;
+    padding-top: 20vh;
 }
 
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #fff;
-        /*top: 80%;*/
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    a:hover{
-        background: #000;
-        color: #fff;
-    }
-    #check:checked ~ul{
-        left: 0;
-    }
+.about-text{
+    font-size: 35px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 10vh;
 }
 
- .landing-page{
-    margin: 0;
+
+.projects{
+    position: relative;
+    color: #CACACA;
+    width: 100%;
+    height: 1080px;
+}
+
+.projects-title{
+    font-size: 60px;
+    font-weight: 600;
+    padding-left: 7%;
+    padding-top: 20vh;
+}
+
+.projects-text{
+    font-size: 35px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 10vh;
+}
+
+
+.contact{
+    position: relative;
+    color: #CACACA;
+    width: 100%;
+    height: 800px;
+}
+
+.contact-title{
+    font-size: 60px;
+    font-weight: 600;
+    padding-left: 7%;
+    padding-top: 20vh;
+}
+
+.contact-text{
+    font-size: 35px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 10vh;
+}
+
+.contact-text2{
+    font-size: 25px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 5vh;
+}
+
+[class^="btn-"] {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    max-width: 80px;
+    margin: 1rem auto;
+    text-transform: uppercase;
+    border: 1px solid currentColor;
+  }
+  
+  .icons{
+      margin-top: 3%;
+      margin-left: 7%;
+  }
+  .btn-0 {
+      border-radius: 0;
+      display: inline-block;
+      margin-right: 3%;
+      color: #EA9B36;
+   }
+  .btn-0:before {
+    content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
- }
-.dp{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
- .landing-page2{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #EA9B36;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+
+.btn-resume{
+    height: 40px;
+    max-width: 150px;
+    border: 2px solid #EA9B36;
+    border-radius: 0;
+    font-size: 20px;
+    color: #EA9B36;
 }
 
- .name1{
-    margin-top: 5%;
+.btn-resume:hover{
+    color: #fff;
+}
+
+.resume-text{
+    font-size: 20px;
+    color: #EA9B36;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: 500;
- }
-
- .designation{
-     position: fixed;
-     margin-top: 2%;
-     position: relative;
-     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 10%;
- }
-
- .rounded{
-     border-radius: 50%;
-     padding: 1px;
-     border: 2px solid transparent;
-     background: #000;
- }
-
-.icons{
-    position: absolute;
-    text-align: center;
-    padding-right: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: capitalize;
+    position: relative;
 }
 
-.icon{
-    width: 50px;
+.resume-text:hover{
+    color: #000;
+}
+
+.btn-01{
+    border: 2px solid #0e76a8;
+    color: #0e76a8;
+}
+
+.btn-01:before {
+    background-color: #0e76a8;
+    border: 2px solid #0e76a8;
+}
+  
+.btn-0:hover:before {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.fab, .fas{
+    font-size: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transition: 0s ease-in-out;
+    transition: 0s ease-in-out;
+    padding: 15px 15px 15px 15px;
+}
+
+.fab:hover{
+    color: white;
+}
+
+.fa-medium-m{
+    color: #fff;
+}
+
+.fa-medium-m:hover{
+    color: #000;
+}
+
+.fa-github{
+    color: #fff;
+}
+
+.fa-github:hover{
+    color: #000;
+}
+
+.btn-02{
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-02:before {
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+.fa-envelope{
+    color: #D44638;
+}
+
+.fa-envelope:hover{
+    color: #fff;
+}
+
+.btn-03{
+    border: 2px solid #D44638;
+    color: #D44638;
+}
+
+.btn-03:before {
+    background-color: #D44638;
+    border: 2px solid #D44638;
+}
+
+
+.fa-codepen{
+    color: #3FCA40;
+}
+
+.fa-codepen:hover{
+    color: #000;
+}
+
+.btn-04{
+    border: 2px solid #3FCA40;
+    color: #3FCA40;
+}
+
+.btn-04:before {
+    background-color: #3FCA40;
+    border: 2px solid #3FCA40;
+}
+
+.up-arrow {
+    border: 2px solid currentColor;
+    position: relative;
+    float: right;
     height: 50px;
-    margin: 10px 10px 10px 10px;
+    width: 50px;
+    border-radius: 0;
+    margin-right: 3%;
+    color: #EA9B36;
+ }
+.up-arrow:before {
+  content: '';
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #EA9B36;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
- .fab, .fas{
-     font-size: 40px;
-     color: black;
-     transition:.5s;
- }
-
- .fab:hover{
-    font-size: 45px;
- }
-
- .fas:hover{
-    font-size: 45px;
- }
+.up-arrow:hover:before {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
